@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Now</title>
     <!-- Fav icon on Top -->
+    <link rel="icon" type="image/png" href="./icon/fav-icon.png">
 
 
     <!-- External Css File connected -->
@@ -38,19 +39,24 @@
         <nav class="relative">
             <section class="mt-15">
                 <div class="flex justify-between">
-                    <h1>Jadoo</h1>
+                    <!-- Jadoo Logo -->
+                    <div><img src="./images/jadoo.svg" alt=""></div>
 
-                    <div class="flex">
 
-                        <ul class="flex gap-x-6">
-                            <li>
-                                <a href="#">Destinations</a>
-                            </li>
-                            <li><a href="#">Hotels</a></li>
-                            <li><a href="#">Flights</a></li>
-                            <li><a href="#">Bookings</a></li>
-                            <li><a href="#">Login</a></li>
+                    <!-- Buttons Here -->
+                    <div class="flex gap-x-6  items-center">
+
+                        <ul class="flex gap-x-6 text-lg text-[#212832] ">
+                            <li class="hover:text-xl hover:text-green-700 hover:font-semibold hover:shadow-xl hover:bg-yellow-200 hover:py-2 hover:px-4 hover:rounded-md transition-all delay-10"><a href="#">Destinations</a></li>
+                            <li class="hover:text-xl hover:text-green-700 hover:font-semibold  hover:shadow-xl hover:bg-yellow-200 hover:py-2 hover:px-4 hover:rounded-md transition-all delay-10"><a href="#">Hotels</a></li>
+                            <li class="hover:text-xl hover:text-green-700 hover:font-semibold  hover:shadow-xl hover:bg-yellow-200 hover:py-2 hover:px-4 hover:rounded-md transition-all delay-10"><a href="#">Flights</a></li>
+                            <li class="hover:text-xl hover:text-green-700 hover:font-semibold  hover:shadow-xl hover:bg-yellow-200 hover:py-2 hover:px-4 hover:rounded-md  transition-all delay-10"><a href="#">Bookings</a></li>
                         </ul>
+
+                        <!-- Button -->
+
+                        <button class="text-lg text-[#212832] hover:text-red-700 hover:font-semibold cursor-pointer  ">Login</button>
+                        <button class="border-b-slate-500 border-1 rounded py-2 px-5 hover:shadow-xl cursor-pointer text-sm hover:text-yellow-200 hover:font-semibold hover:bg-black">SignUp</button>
 
 
                     </div>
@@ -58,6 +64,38 @@
             </section>
 
         </nav>
+
+
+        <!-------------------- Banner Section-------------------- -->
+        <section class="relative grid grid-cols-2">
+            <!-- Text -->
+            <div>
+                <h3 class="uppercase text-orange-500 font-bold mt-34 text-lg font-[Poppins]">Best Destinations around the world</h3>
+                <h1 class="font-extrabold text-7xl mt-6 font-[Volkhov] text-[#181E4B]">Travel, enjoy <br> and live a new <br> and full life</h1>
+                <p class="mt-7 text-[#5E6282] text-lg ">Built Wicket longer admire do barton vanity itself do in it. <br> Preferred to sportsmen it engrossed listening. Park gate <br> sell they west hard for the.</p>
+
+                <!-- Button Div -->
+                <div class="flex items-center ">
+
+                    <div class="">
+                        <button class="bg-orange-400 cursor-pointer text-white text-lg rounded-lg py-3 px-5 mt-8">Find out more</button>
+                    </div>
+
+                    <div class="flex items-center">
+                        <img src="./icon/Play button.svg" alt="">
+                        <h3 class="text-[#686D77] text-lg font-semibold">Play Demo</h3>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- image -->
+            <div>
+                <img class="mt-6" src="./images/Traveller 1.png" alt="">
+            </div>
+
+        </section>
 
 
 
