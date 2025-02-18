@@ -37,64 +37,61 @@
     <main class="relative max-w-screen-xl mx-auto ">
 
         <!------------------ Navbar Section ------------------>
+        <nav class="relative bg-white">
+            <div class="container flex items-center justify-between px-4 py-4 mx-auto">
+                <!-- Jadoo Logo -->
+                <div>
+                    <img src="./images/jadoo.svg" alt="Jadoo Logo" class="h-5 md:h-10">
+                </div>
 
-        <nav class="relative">
-            <section class="mt-15">
-                <div class="flex justify-between">
-                    <!-- Jadoo Logo -->
-                    <div><img src="./images/jadoo.svg" alt=""></div>
+                <!-- Hamburger Menu (Mobile) -->
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none" id="menu-btn">
+                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
 
-
-                    <!-- Buttons Here -->
-                    <div class="flex items-center gap-x-6">
-
-                        <ul class="flex gap-x-6 text-lg text-[#212832] ">
-                            <li class="transition-all hover:text-xl hover:text-black hover:font-semibold hover:shadow-lg hover:bg-orange-400 hover:py-2 hover:px-4 hover:rounded-md delay-10"><a href="#">Destinations</a></li>
-
-                            <li class="transition-all hover:text-xl hover:text-black hover:font-semibold hover:shadow-lg hover:bg-orange-400 hover:py-2 hover:px-4 hover:rounded-md delay-10"><a href="#">Hotels</a></li>
-
-                            <li class="transition-all hover:text-xl hover:text-black hover:font-semibold hover:shadow-lg hover:bg-orange-400 hover:py-2 hover:px-4 hover:rounded-md delay-10"><a href="#">Flights</a></li>
-
-                            <li class="transition-all hover:text-xl hover:text-black hover:font-semibold hover:shadow-lg hover:bg-orange-400 hover:py-2 hover:px-4 hover:rounded-md delay-10"><a href="#">Bookings</a></li>
-                        </ul>
-
-                        <!-- Button -->
-
-                        <button class="delay-10 transition-all text-lg text-[#212832] hover:text-red-700 hover:font-bold hover:text-xl cursor-pointer  ">Login</button>
-                        <button class="px-5 py-2 text-sm transition-all rounded cursor-pointer delay-10 border-b-slate-500 border-1 hover:shadow-xl hover:text-yellow-200 hover:font-semibold hover:bg-black">SignUp</button>
-
-
+                <!-- Navigation Links -->
+                <div class="absolute left-0 flex-col hidden w-full p-4 bg-white shadow-md md:flex md:items-center md:gap-x-6 md:flex-row md:relative md:w-auto top-full md:bg-transparent md:shadow-none md:p-0" id="menu">
+                    <ul class="flex flex-col md:flex-row gap-y-4 md:gap-x-6 text-lg text-[#212832]">
+                        <li class="px-4 py-2 transition rounded-md hover:bg-orange-400 hover:text-white"><a href="#">Destinations</a></li>
+                        <li class="px-4 py-2 transition rounded-md hover:bg-orange-400 hover:text-white"><a href="#">Hotels</a></li>
+                        <li class="px-4 py-2 transition rounded-md hover:bg-orange-400 hover:text-white"><a href="#">Flights</a></li>
+                        <li class="px-4 py-2 transition rounded-md hover:bg-orange-400 hover:text-white"><a href="#">Bookings</a></li>
+                    </ul>
+                    <div class="flex flex-col md:flex-row gap-y-4 md:gap-x-6">
+                        <button class="text-lg text-[#212832] hover:text-red-700 hover:font-bold transition">Login</button>
+                        <button class="px-5 py-2 text-sm transition border rounded hover:bg-black hover:text-yellow-200">SignUp</button>
                     </div>
                 </div>
-            </section>
-
+            </div>
         </nav>
 
 
         <!-------------------- Banner Section-------------------- -->
-
-        <section class="relative grid grid-cols-2">
+        <section class="relative grid md:grid-cols-2">
             <!-- Text -->
             <div>
-                <h3 class="uppercase text-orange-500 font-bold mt-34 text-lg font-[Poppins]">Best Destinations around the world</h3>
-                <h1 class="font-extrabold text-7xl mt-6 font-[Volkhov] text-[#181E4B]">Travel, enjoy <br> and live a new <br> and full life</h1>
-                <p class="mt-7 text-[#5E6282] text-lg ">Built Wicket longer admire do barton vanity itself do in it. <br> Preferred to sportsmen it engrossed listening. Park gate <br> sell they west hard for the.</p>
+                <h3 class="uppercase text-orange-500 font-bold mt-34 md:text-lg text-base font-[Poppins]">Best Destinations around the world</h3>
+                <h1 class="font-extrabold md:text-7xl text-5xl mt-6 font-[Volkhov] text-[#181E4B]">Travel, enjoy <br> and live a new <br> and full life</h1>
+                <p class="md:mt-7 mt-4 text-[#5E6282] md:text-lg text-base ">Built Wicket longer admire do barton vanity itself do in it. <br> Preferred to sportsmen it engrossed listening. Park gate <br> sell they west hard for the.</p>
 
                 <!-- Button Div -->
-                <div class="flex items-center space-x-16">
+                <div class="flex items-center gap-3 md:gap-10">
 
                     <!-- Button -->
                     <div class="">
-                        <button class="px-5 py-3 mt-8 text-lg text-white bg-orange-400 rounded-lg cursor-pointer hover:bg-purple-500">Find out more</button>
+                        <button class="px-4 py-3 mt-8 text-white bg-orange-400 rounded-lg cursor-pointer md:px-5 md:text-lg hover:bg-purple-500">Find out more</button>
                     </div>
 
                     <!-- Text -->
 
                     <div class="flex items-center mt-6 ">
-                        <img class="cursor-pointer h-15 w-15" src="./icon/play btn.png" alt="">
-                        <h3 class="text-[#686D77] text-lg font-semibold">Play Demo</h3>
+                        <img class="w-12 h-12 cursor-pointer md:h-15 md:w-15" src="./icon/play btn.png" alt="">
+                        <h3 class="text-[#686D77] md:text-lg font-semibold">Play Demo</h3>
                     </div>
-
 
                 </div>
 
@@ -106,9 +103,9 @@
                 </div>
 
                 <!-- Plane 1 -->
-                <div class="absolute top-12 left-12"><img src="./icon/plane.svg" alt=""></div>
+                <div class="absolute md:top-12 top-5 md:left-12 left-7"><img src="./icon/plane.svg" alt=""></div>
                 <!-- Plane 2 -->
-                <div class="absolute top-30 left-135"><img src="./icon/plane.svg" alt=""></div>
+                <div class="absolute md:top-30 top-60 md:left-135 left-80 "><img src="./icon/plane.svg" alt=""></div>
 
             </div>
 
@@ -116,37 +113,35 @@
 
 
         <!--------------- We offer best services----------- -->
-
         <div class="mx-auto text-center mt-28">
-            <h3 class="text-[#5E6282] uppercase text-lg font-semibold font-[Poppins]">Category</h3>
-            <h1 class="text-5xl font-bold text-[#14183E] font-[Volkhov] mt-3">We Offer Best Services</h1>
+            <h3 class="text-[#5E6282] uppercase md:text-lg text-base font-semibold font-[Poppins]">Category</h3>
+            <h1 class=" md:text-5xl text-3xl font-bold text-[#14183E] font-[Volkhov] mt-3">We Offer Best Services</h1>
         </div>
 
 
         <!-------------------- Best Services Card ------------------->
-
-        <section class="flex justify-center mt-20 space-x-6">
+        <section class="items-center justify-center space-x-6 md:flex md:mt-20 mt-14">
 
             <!-- Card 1 -->
-            <div class=" w-3xs rounded-2xl h-[314px] p-10 shadow-lg cursor-pointer">
+            <div class=" w-3xs rounded-2xl md:h-[314px] h-[280px] md:p-10 p-6 shadow-lg cursor-pointer">
                 <img class="mx-auto " src="./icon/network.svg" alt="">
                 <h2 class="font-sans font-bold text-lg text-[#1E1D4C] mt-7">Calculated Weather </h2>
                 <h3 class="mt-4 font-[Poppins] text-[#5E6282]">Built Wicket longer admire do barton vanity itself do in it.</h3>
             </div>
             <!-- Card 2 -->
-            <div class=" w-3xs rounded-2xl h-[314px] p-10 shadow-lg cursor-pointer">
+            <div class=" w-3xs rounded-2xl md:h-[314px] h-[280px] md:p-10 p-6 shadow-lg cursor-pointer">
                 <img class="mx-auto mt-3 " src="./icon/airplane.png" alt="">
                 <h2 class="font-sans font-bold text-lg text-[#1E1D4C] mt-7">Best Flights </h2>
                 <h3 class="mt-4 font-[Poppins] text-[#5E6282]">Engrossed listening. Park gate sell they west hard for the.</h3>
             </div>
             <!-- Card 3 -->
-            <div class=" w-3xs rounded-2xl h-[314px] p-10 shadow-lg cursor-pointer">
+            <div class=" w-3xs rounded-2xl md:h-[314px] h-[280px] md:p-10 p-6 shadow-lg cursor-pointer">
                 <img class="mx-auto " src="./icon/Microphone.png" alt="">
                 <h2 class="font-sans font-bold text-lg text-[#1E1D4C] mt-7">Local Events</h2>
                 <h3 class="mt-4 font-[Poppins] text-[#5E6282]">Barton vanity itself do in it. Preferd to men it engrossed listening. </h3>
             </div>
             <!-- Card 4 -->
-            <div class=" w-3xs rounded-2xl h-[314px] p-10 shadow-lg cursor-pointer">
+            <div class=" w-3xs rounded-2xl md:h-[314px] h-[280px] md:p-10 p-6 shadow-lg cursor-pointer">
                 <img class="mx-auto " src="./icon/setting.svg" alt="">
                 <h2 class="font-sans font-bold text-lg text-[#1E1D4C] mt-7">Customization </h2>
                 <h3 class="mt-4 font-[Poppins] text-[#5E6282]">We deliver outsourced aviation services for military customers</h3>
@@ -157,24 +152,22 @@
 
 
         <!--------------- Top Destinations----------- -->
-
         <div class="mx-auto text-center mt-38 ">
-            <h3 class="text-[#5E6282] uppercase text-lg font-semibold font-[Poppins]">Top Selling</h3>
-            <h1 class="text-5xl font-bold text-[#14183E] font-[Volkhov] mt-3">Top Destinations</h1>
+            <h3 class="text-[#5E6282] uppercase md:text-lg text-base font-semibold font-[Poppins]">Top Selling</h3>
+            <h1 class=" md:text-5xl text-3xl font-bold text-[#14183E] font-[Volkhov] mt-3">Top Destinations</h1>
         </div>
 
 
 
         <!------------------ Top Destinations Card------------------->
-
-        <section class="flex justify-center mt-20 space-x-6 mb-45">
+        <section class="justify-center mb-32 space-x-6 md:flex md:mt-20 mt-14 md:mb-45">
 
             <!-- Card 1 -->
             <div class="shadow-xl cursor-pointer w-xs rounded-3xl">
 
                 <!-- image -->
                 <div class="">
-                    <img class="rounded-t-3xl h-[300px]" src="./images/img 1.jpg" alt="">
+                    <img class="rounded-t-3xl md:h-[300px] h-[250px]" src="./images/img 1.jpg" alt="">
                 </div>
 
                 <!-- Text -->
@@ -184,7 +177,7 @@
                         <h3 class="text-[#5E6282] font-[poppins] text-lg">$5,42k</h3>
                     </div>
 
-                    <div class="flex px-4 mt-5 mb-10 space-x-4">
+                    <div class="flex px-4 pb-4 mt-5 mb-10 space-x-4">
                         <img src="./icon/arrow.svg" alt="">
                         <h3 class="text-[#5E6282] font-[poppins] text-sm">10 Days Trip</h3>
                     </div>
@@ -197,7 +190,7 @@
 
                 <!-- image -->
                 <div class="">
-                    <img class="rounded-t-3xl h-[300px]" src="./images/img 2.jpg" alt="">
+                    <img class="rounded-t-3xl md:h-[300px] h-[250px]" src="./images/img 2.jpg" alt="">
                 </div>
 
                 <!-- Text -->
@@ -207,7 +200,7 @@
                         <h3 class="text-[#5E6282] font-[poppins] text-lg">$4.2k</h3>
                     </div>
 
-                    <div class="flex px-4 mt-5 mb-10 space-x-4">
+                    <div class="flex px-4 pb-4 mt-5 mb-10 space-x-4">
                         <img src="./icon/arrow.svg" alt="">
                         <h3 class="text-[#5E6282] font-[poppins] text-sm">12 Days Trip</h3>
                     </div>
@@ -220,7 +213,7 @@
 
                 <!-- image -->
                 <div class="">
-                    <img class="rounded-t-3xl h-[300px]" src="./images/img 3.jpg" alt="">
+                    <img class="rounded-t-3xl md:h-[300px] h-[250px]" src="./images/img 3.jpg" alt="">
                 </div>
 
                 <!-- Text -->
@@ -230,7 +223,7 @@
                         <h3 class="text-[#5E6282] font-[poppins] text-lg">$15k</h3>
                     </div>
 
-                    <div class="flex px-4 mt-5 mb-10 space-x-4">
+                    <div class="flex px-4 pb-4 mt-5 mb-10 space-x-4">
                         <img src="./icon/arrow.svg" alt="">
                         <h3 class="text-[#5E6282] font-[poppins] text-sm">28 Days Trip</h3>
                     </div>
@@ -242,24 +235,22 @@
         </section>
 
 
-
         <!--------------------- Book Your Next Trip --------------------->
-
-        <section class="relative grid grid-cols-2 mb-52">
+        <section class="relative grid md:grid-cols-2 md:mb-52 mb-36">
 
             <!-- -- Text section--- -->
             <div>
-                <h3 class="text-[#5E6282] font-[poppins] text-lg">Easy & Fast</h3>
+                <h3 class="text-[#5E6282] font-[poppins] md:text-lg text-base">Easy & Fast</h3>
 
-                <h1 class="text-5xl font-bold text-[#14183E] font-[Volkhov] mt-6">Book your next trip <br> in 3 easy steps</h1>
+                <h1 class=" md:text-5xl text-3xl font-bold text-[#14183E] font-[Volkhov] mt-6">Book your next trip <br> in 3 easy steps</h1>
 
                 <!-- Part 1 -->
                 <div class="flex items-center mt-8 space-x-5">
 
                     <div> <img src="./icon/yellow icon.svg" alt=""></div>
                     <div>
-                        <h3 class="text-[#5E6282] text-lg font-semibold font-[Poppins]">Choose Destination</h3>
-                        <p class="text-[#5E6282] font-[poppins] text-sm">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
+                        <h3 class="text-[#5E6282] md:text-lg  font-semibold font-[Poppins]">Choose Destination</h3>
+                        <p class="text-[#5E6282] font-[poppins] md:text-sm text-xs">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
                     </div>
 
                 </div>
@@ -268,8 +259,8 @@
 
                     <div> <img src="./icon/orange icon.svg" alt=""></div>
                     <div>
-                        <h3 class="text-[#5E6282] text-lg font-semibold font-[Poppins]">Make Payment</h3>
-                        <p class="text-[#5E6282] font-[poppins] text-sm">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
+                        <h3 class="text-[#5E6282] md:text-lg font-semibold font-[Poppins]">Make Payment</h3>
+                        <p class="text-[#5E6282] font-[poppins] md:text-sm text-xs">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
                     </div>
 
                 </div>
@@ -279,8 +270,8 @@
                     <div>
                         <img src="./icon/blue icon.svg" alt=""></div>
                     <div>
-                        <h3 class="text-[#5E6282] text-lg font-semibold font-[Poppins]">Reach Airport on Selected Date</h3>
-                        <p class="text-[#5E6282] font-[poppins] text-sm">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
+                        <h3 class="text-[#5E6282] md:text-lg font-semibold font-[Poppins]">Reach Airport on Selected Date</h3>
+                        <p class="text-[#5E6282] font-[poppins] md:text-sm text-xs">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </p>
                     </div>
 
                 </div>
@@ -289,7 +280,7 @@
 
 
             <!------------- image Card ------------>
-            <div class="bg-white shadow-lg rounded-2xl w-[370px] h-[430px] mt-12 cursor-pointer">
+            <div class="bg-white shadow-lg rounded-2xl md:w-[370px] w-[350px] md:h-[430px] h-[400px] mt-12 cursor-pointer">
                 <div class="px-6 py-5"> <img src="./images/red girl.jpg" alt="">
                     <h3 class="text-[#080809] text-lg font-semibold font-[Poppins] mt-6">Trip To Greece</h3>
 
@@ -308,7 +299,7 @@
                         </div>
 
                         <div class="bg-gray-200 rounded-full">
-                            <img class="p-3" src="./icon/send 2.svg" alt="">
+                            <img class="p-3" src="./icon/leaf 1.svg" alt="">
                         </div>
 
 
@@ -332,7 +323,7 @@
 
 
             <!------ Mini Card------>
-            <div class="bg-white rounded-2xl w-[263px] h-[129px] absolute left-220 top-68 shadow-2xl shadow-blue-300">
+            <div class="bg-white rounded-2xl w-[263px] h-[129px] absolute md:left-220 left-54 md:top-68 top-158 shadow-2xl shadow-blue-300">
 
                 <div class="flex mt-4 ml-2 space-x-5">
 
@@ -367,27 +358,25 @@
         </section>
 
 
-
-
         <!--------------------- What People Say About Us--------------------->
-        <section class="relative grid grid-cols-2 mx-auto mb-20 mt-52">
+        <section class="relative grid mx-auto mb-20 md:grid-cols-2 md:mt-52 ">
 
             <!--- Text Section- -->
             <div class="">
-                <h3 class="text-[#5E6282] font-[poppins] text-lg">Testimonials</h3>
-                <h1 class="mt-2 text-5xl font-bold text-[#14183E] font-[Volkhov] ">What people say <br> about Us.</h1>
-                <img class="mt-20" src="./icon/dot dot.svg" alt="">
+                <h3 class="text-[#5E6282] font-[poppins] md:text-lg text-base">Testimonials</h3>
+                <h1 class="mt-2 md:text-5xl text-3xl font-bold text-[#14183E] font-[Volkhov] ">What people say <br> about Us.</h1>
+                <img class="mt-6 mb-16 md:mt-20" src="./icon/dot dot.svg" alt="">
             </div>
 
             <!-- Card Section -->
-            <div class="mb-24 ">
+            <div class="mb-12 md:mb-24 ">
                 <!-- Card 1 -->
-                <div class="bg-white shadow-xl border-gray-300 border shadow-purple-200 rounded-xl h-[220px] w-md relative z-30">
+                <div class="bg-white shadow-xl border-gray-300 border shadow-purple-200 rounded-xl md:h-[220px] h-[180px] md:w-md w-sm relative z-30">
 
-                    <div class="mt-12 ml-8 mr-16">
-                        <h3 class="text-[#5E6282] font-[poppins] text-sm">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</h3>
+                    <div class="ml-8 mr-16 md:mt-12 mt-7">
+                        <h3 class="text-[#5E6282] font-[poppins] md:text-sm text-xs">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</h3>
 
-                        <h2 class="text-[#5E6282] font-[poppins] font-semibold text-lg mt-8">Mike taylor</h2>
+                        <h2 class="text-[#5E6282] font-[poppins] font-semibold md:text-lg text-md mt-8">Mike taylor</h2>
                         <p class=" text-[#5E6282] font-[poppins] text-sm">Lahore, Pakistan</p>
                     </div>
 
@@ -395,12 +384,12 @@
 
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-white shadow-xl shadow-lime-200 rounded-xl h-[220px] w-md absolute top-25  left-180 opacity-80 border border-gray-300 z-20">
+                <div class="bg-white shadow-xl shadow-lime-200 rounded-xl md:h-[220px] h-[180px] md:w-md w-sm absolute md:top-25 top-80  md:left-180 left-20 opacity-80 border border-gray-300 z-20">
 
-                    <div class="mt-12 ml-8 mr-16">
+                    <div class="mt-6 ml-8 mr-16 md:mt-12">
                         <h3 class="text-[#5E6282] font-[poppins] text-sm">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</h3>
 
-                        <h2 class="text-[#5E6282] font-[poppins] font-semibold text-lg mt-8">Mr. Shuvo</h2>
+                        <h2 class="text-[#5E6282] font-[poppins] font-semibold text-lg md:mt-8 mt-2">Mr. Shuvo</h2>
                         <p class=" text-[#5E6282] font-[poppins] text-sm">Tangail, Bangladesh</p>
                     </div>
 
@@ -414,11 +403,8 @@
         </section>
 
 
-
-
         <!---------------------- Companies--------------------->
-
-        <section class="flex justify-center mx-auto mt-40 space-x-8 ">
+        <section class="justify-center gap-3 mx-auto mt-24 space-x-2 md:mt-40 md:space-x-8 md:flex">
             <img class="cursor-pointer" src="./icon/axon.png" alt="">
             <img class="cursor-pointer" src="./icon/jetstar.png" alt="">
             <img class="cursor-pointer" src="./icon/expedia.png" alt="">
@@ -427,53 +413,45 @@
 
 
 
-        <!-- --------------------Subscribe Section--------------------- -->
+        <!-- Subscription Section -->
+        <section class="bg-[#DFD7F9] w-full md:h-[407px] h-auto md:rounded-tl-[129px] rounded-tl-xl rounded-tr-xl md:rounded-bl-xl rounded-br-xl md:mt-24 mt-6 mb-[160px] p-3 flex flex-col items-center text-center">
+            <!-- Inner Text -->
+            <h1 class="font-[Poppins] md:pt-20 pt-3 md:text-3xl text-sm font-semibold text-[#5E6282] max-w-2xl">
+                Subscribe to get information, latest news and other interesting offers about Jadoo
+            </h1>
 
-        <section class="bg-[#DFD7F9] h-[407px] rounded-tl-[129px] rounded-tr-xl rounded-bl-xl rounded-br-xl mt-24 mb-[160px] relative">
-            <!-- inner Text -->
-            <div>
-                <h1 class="font-[Poppins] pt-20 justify-center items-center text-center text-3xl font-semibold text-[#5E6282]">Subscribe to get information, latest news and other <br> interesting offers about Jadoo</h1>
-            </div>
-
-
-            <div class="mt-[74px] flex justify-center items-center space-x-5">
-                <div class=" relative inline-flex items-center h-[68px] w-[421px] px-3 py-2 bg-white border border-gray-300 rounded-md">
-                    <!-- Check Icon -->
+            <!-- Input & Button Container -->
+            <div class="mt-2
+             md:mt-[74px] flex flex-col md:flex-row items-center gap-4 w-full max-w-lg">
+                <div class="flex items-center w-full md:w-[421px] px-3 py-3 bg-white border border-gray-300 rounded-md">
+                    <!-- Email Icon -->
                     <span class="mr-2 text-gray-400">
-                      <img src="./icon/mail box.svg" class="w-4 h-4" alt="" />
-                          
-        
+                        <img src="./icon/mail box.svg" class="w-4 h-4" alt="" />
                     </span>
                     <!-- Email Input -->
                     <input class="flex-1 text-sm text-gray-700 placeholder-gray-400 bg-transparent border-none outline-none" type="email" placeholder="Your email" />
                 </div>
 
-
-
-                <!-- Button -->
-                <div class="items-center justify-center">
-                    <button class="px-5 py-3 text-lg text-white bg-orange-400 rounded-lg cursor-pointer hover:bg-purple-500">Subscribe</button>
-                </div>
-
-                <!-- Send icon -->
-                <img class="absolute p-1 bg-white rounded-full shadow-lg -top-5 -right-6 shadow-gray-600" src="./icon/send icon.svg" alt="">
-
-
+                <!-- Subscribe Button -->
+                <button class="px-5 py-3 text-base text-white bg-orange-400 rounded-md cursor-pointer md:text-lg md:rounded-lg hover:bg-purple-500">
+                    Subscribe
+                </button>
             </div>
 
-
+            <!-- Send Icon -->
+            <img class="absolute hidden p-1 bg-white rounded-full shadow-lg -top-5 right-5 shadow-gray-600 md:block" src="./icon/send icon.svg" alt="">
         </section>
 
 
+
         <!----------------------- Footer Section ----------------------->
+        <footer class="mx-auto md:justify-center md:items-center">
 
-        <footer class="items-center justify-center mx-auto ">
-
-            <div class="grid grid-cols-5 gap-x-8">
+            <div class="grid md:grid-cols-5 gap-x-8">
                 <!-- 1st column -->
                 <div>
-                    <h1 class="text-5xl font-md font-[Poppins] text-[#0a0b0e]">Jadoo.</h1>
-                    <p class="text-[#5E6282] font-[poppins] text-sm mt-5">Book your trip in minute, get full Control for much longer.
+                    <h1 class=" md:text-5xl text-3xl font-md font-[Poppins] text-[#0a0b0e]">Jadoo.</h1>
+                    <p class="text-[#5E6282] font-[poppins] md:text-sm text-xs md:mt-5 mt-2">Book your trip in minute, get full Control for much longer.
                     </p>
                 </div>
 
@@ -481,7 +459,7 @@
                 <div>
                     <h1 class="text-lg font-bold font-[Poppins]">Company</h1>
 
-                    <ul class="mt-8">
+                    <ul class="mt-3 md:mt-8">
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">About</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Careers</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Mobile</a></li>
@@ -493,7 +471,7 @@
                 <div>
                     <h1 class="text-lg font-bold font-[Poppins]">Contact</h1>
 
-                    <ul class="mt-8">
+                    <ul class="mt-3 md:mt-8">
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Help/FAQ</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Press</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Affilates</a></li>
@@ -505,7 +483,7 @@
                 <div>
                     <h1 class="text-lg font-bold font-[Poppins]">More</h1>
 
-                    <ul class="mt-8">
+                    <ul class="mt-3 md:mt-8">
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Airline fees</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Airline</a></li>
                         <li><a class="text-[#5E6282] text-lg font-medium font-[Poppins] mt-3 hover:text-green-800" href="#">Low fare tips</a></li>
@@ -516,47 +494,34 @@
                 <!-- icon 5th Column -->
                 <div>
                     <!-- social icon -->
-                    <div class="flex items-center justify-center space-x-1">
+                    <div class="flex-row items-center justify-center space-x-1 space-y-3 md:flex">
                         <img class="cursor-pointer" src="./icon/facebook.svg" alt="">
                         <img class="cursor-pointer" src="./icon/twitter.svg" alt="">
                         <img class="h-10 mb-2 rounded-full shadow-lg cursor-pointer w-14" src="./icon/instagram-icon.png" alt="">
                     </div>
 
                     <!-- text -->
-                    <h2 class="text-[#5E6282] text-lg font-bold font-[Poppins] mt-7 ml-9">Discover our app</h2>
+                    <h2 class="text-[#5E6282] md:text-lg text-md font-bold font-[Poppins] mt-7 ml-9">Discover our app</h2>
 
-                    <div class="flex mt-4 space-x-1">
-                        <!-- Play store -->
-                        <div class="cursor-pointer bg-black rounded-l-full rounded-r-full w-[200px] h-[50px] flex justify-center items-center  ">
-
-                            <!-- playstore icon -->
-                            <div class="">
-                                <img class="w-6 h-6" src="./icon/play store.png" alt="">
+                    <!-- Store Buttons Section -->
+                    <div class="flex flex-col items-center gap-2 mt-4 md:flex-row md:gap-8">
+                        <!-- Play Store -->
+                        <div class="cursor-pointer bg-black rounded-full w-[200px] h-[50px] flex justify-center items-center gap-2 p-2">
+                            <img class="w-6 h-6" src="./icon/play store.png" alt="">
+                            <div class="text-center text-white">
+                                <h2 class="text-sm font-semibold">Get it On</h2>
+                                <h3 class="text-sm">Google Play</h3>
                             </div>
-                            <!-- Text -->
-                            <div class="items-center justify-center">
-                                <h2 class="text-sm font-semibold text-white">Get it On</h2>
-                                <h3 class="text-sm text-white ">Google Play</h3>
-                            </div>
-
                         </div>
 
-
-                        <!-- Apple store -->
-                        <div class="cursor-pointer bg-black rounded-l-full rounded-r-full w-[200px] h-[50px] flex justify-center items-center  ">
-
-                            <!-- playstore icon -->
-                            <div class="">
-                                <img class="w-6 h-6" src="./icon/apple.png" alt="">
+                        <!-- Apple Store -->
+                        <div class="cursor-pointer bg-black rounded-full w-[200px] h-[50px] flex justify-center items-center gap-2 p-2 mt-2 md:mt-0">
+                            <img class="w-6 h-6" src="./icon/apple.png" alt="">
+                            <div class="text-center text-white">
+                                <h2 class="text-sm font-semibold">Get it On</h2>
+                                <h3 class="text-sm">App Store</h3>
                             </div>
-                            <!-- Text -->
-                            <div class="items-center justify-center">
-                                <h2 class="text-sm font-semibold text-white">Get it On</h2>
-                                <h3 class="text-sm text-white ">Google Play</h3>
-                            </div>
-
                         </div>
-
                     </div>
 
                 </div>
